@@ -13,7 +13,7 @@
 
 
 def print_with_zeros(num):
-    num_str = str(num).zfill(7)
+    num_str = str(num).zfill(9)
     print(num_str)
 
 # Приклад використання:

@@ -10,7 +10,7 @@ def write_employees_to_file(employee_list, path):
     print(employee_list)
     
 
-employee_list = [['Robert Stivenson,28', 'Alex Denver,30'], 
-                 ['Drake Mikelsson,19']]
+employee_list = [['Robert,28', 'Alex Denver,30'], 
+                 ['Drake Mikelsson,77']]
 path = "data.txt" 
 write_employees_to_file(employee_list, path)

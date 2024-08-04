@@ -10,8 +10,8 @@ def segment_count_and_remainder(a, b):
     return count_b, rest_a
 
 # Тестові дані
-a = 10098
-b = 191
+a = 10
+b = 3
 
 # Викликаємо функцію і отримуємо результат
 result = segment_count_and_remainder(a, b)

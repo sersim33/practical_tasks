@@ -1,10 +1,21 @@
+import datetime
 
-name = str(input("add name: "))
-age = int(input("add age: "))
-hobby = str(input("add hobby: "))
+def get_weekday(date_string):
+    # Перетворення рядка на об'єкт datetime
+    date = datetime.datetime.strptime(date_string, "%d.%m.%Y")
+    # Визначення дня тижня
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    weekday = days[date.weekday()]
+    return weekday
 
-print(f"Hello! My name is {name} I am {age} years old and my hobby is {hobby} ")
+def main():
+    date_string = input("Введіть дату народження (дд.мм.рррр): ")
+    
+    try:
+        weekday = get_weekday(date_string)
+        print(f"День народження припадає на: {weekday}")
+    except ValueError:
+        print("Неправильний формат дати. Будь ласка, введіть дату у форматі дд.мм.рррр.")
 
-# Lord Voldemort
-# 72
-# Magic
+if __name__ == "__main__":
+    main()

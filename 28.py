@@ -8,6 +8,7 @@ def sum (n):
 
     res = n1 + n2 + n3 + n4
 
+    print(f"res = n1 + n2 + n3 + n4 = {n1} + {n2} + {n3} + {n4} = {res}")
     return res 
-
+    
 print(sum(3))

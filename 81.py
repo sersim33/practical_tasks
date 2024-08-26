@@ -4,5 +4,5 @@ def next_even(n):
     return n + 2 - (n % 2)
 
 # Приклад використання
-n = 11
-print(next_even(n))  # Виведе 8
+n = 13
+print(next_even(n))  # Виведе 
